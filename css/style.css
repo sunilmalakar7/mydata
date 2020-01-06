@@ -1,0 +1,101 @@
+body{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;	
+}
+/******* HEADER START ********/
+div.main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('../images/back.jpg');
+    
+}
+
+.navbar{
+  background: rgba(0,0,0,0.3);
+  border:none!important;
+}
+.navbar-brand{
+  font-size: 30px!important;
+  color: white!important;
+  transform: scale(1,1.4);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.navbar-nav li{
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar-nav li .active{
+  color: orange!important;
+  border-bottom:  2px solid orange !important;
+  padding-bottom: 0px;
+}
+.navbar-nav li a{
+  color: white!important;
+}
+.navbar-nav li a:hover{
+  color: orange!important;
+  transition: 0.4s;
+}
+
+
+/* MEDIA SCREEN HEADER START    */
+@media screen and (max-width: 990px)
+{
+      .navbar-brand{
+        font-size: 24px!important;
+        transform: scale(1,1.4);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      .navbar-nav li{
+        font-size: 14px!important;
+        margin-left: 15px!important;
+        
+      }
+} 
+
+div.header-container{
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-shadow: 2px 2px black;
+}
+div.header-container h1{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+div.header-container h1 span{
+  color: skyblue;
+  text-shadow: 2px 2px red;
+}
+/******* HEADER END *********/
+
+@media screen and (max-width: 795px)
+{
+    .navbar-nav li{
+      margin-left: 0px;
+      font-weight: none;
+      text-align: center;
+    }
+   .navbar-nav li .active{
+      color: orange!important;
+      border: 0px solid orange !important;
+      width: 100%!important;
+    }
+    .navbar-nav li a:hover{
+      /*color: orange!important;*/
+      transition: 0.4s;
+    }
+}
